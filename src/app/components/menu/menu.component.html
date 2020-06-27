@@ -1,0 +1,38 @@
+
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-dark lighten-1" 
+            style="top: 0;left: 0;position: fixed;width: 100%;z-index: 9;">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" [routerLink]="['/']">Koncrate</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+              <a class="nav-link waves-light mr-3" mdbWavesEffect [routerLink]="['/']">Accueil<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-ligh mr-3t" mdbWavesEffect [routerLink]="['/services']">Services</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light mr-3" mdbWavesEffect [routerLink]="['/blog']">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-light mr-3" mdbWavesEffect [routerLink]="['/about']">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light mr-3" mdbWavesEffect [routerLink]="['/contact']">Contact</a>
+      </li>
+
+         
+
+      </ul>
+      
+     
+  </links>
+ 
+</mdb-navbar>

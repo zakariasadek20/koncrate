@@ -1,0 +1,50 @@
+
+
+<section class="my-5">
+
+  <!-- Grid row -->
+  <div class="row mt-5" *ngFor="let post of myPosts">
+    
+    <!-- Grid column -->
+    <div class="col-lg-5">
+
+      <!-- Featured image -->
+      <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="{{post.image}}" alt="{{post.titre}}">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7">
+
+      <!-- Category -->
+      <!-- <a href="#!" class="green-text">
+        <h6 class="font-weight-bold mb-3"><mdb-icon fas icon="utensils" class="pr-2"></mdb-icon>Food</h6>
+      </a> -->
+      <!-- Post title -->
+      <h3 class="font-weight-bold mb-3"><strong>{{post.titre}}</strong></h3>
+      <!-- Excerpt -->
+      <p> {{post.extrait}}</p>
+      <!-- Post data -->
+      <p>by <a><strong>Le</strong></a>,   {{post.dateCreation.date|date}}</p>
+      <!-- Read more button -->
+      <a mdbBtn color="success" mdbWavesEffect [routerLink]="['/blog',post.slug]">Read more</a>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+  <hr class="my-5">
+</section>
+<!-- Section: Blog v.1 -->
+
+
+
+
