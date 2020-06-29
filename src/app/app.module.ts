@@ -7,7 +7,7 @@ import { MessageService } from './services/message.service';
 import { PostService } from './services/post.service';
 import { ServiceService } from './services/service.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule,NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, InjectionToken, Injectable, Inject } from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
@@ -60,7 +60,8 @@ import { ServicesPageComponent } from './components/services-page/services-page.
     FormsModule,
     RoutesRoutingModule
   ],
-  providers: [ServiceService,PostService,MessageService,SlideService,CommonService],
+  providers: [ServiceService,PostService,MessageService,SlideService,CommonService
+    ],
   bootstrap: [AppComponent],
   schemas:[NO_ERRORS_SCHEMA]
 })

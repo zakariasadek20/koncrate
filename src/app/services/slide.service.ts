@@ -8,7 +8,7 @@ import { Http } from '@angular/http';
 export class SlideService extends DataService {
 
   constructor(http:Http) {
-    super('http://localhost:8000/api/sliders',http);
+    super('https://koncrate.herokuapp.com/api/sliders',http);
    }
 
 

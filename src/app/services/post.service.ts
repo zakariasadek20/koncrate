@@ -8,6 +8,6 @@ import { Injectable } from '@angular/core';
 export class PostService extends DataService {
 
   constructor(http:Http) { 
-    super('http://localhost:8000/api/posts',http);
+    super('https://koncrate.herokuapp.com/api/posts',http);
   }
 }

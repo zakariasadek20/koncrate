@@ -5,9 +5,11 @@ import { Injectable } from '@angular/core';
 import{ Http, Response } from '@angular/http';
 import {catchError, map} from 'rxjs/operators';
 import { Observable } from 'rxjs';
-@Injectable({
-  providedIn: 'root'
-})
+
+// @Injectable({
+//   providedIn: 'root'
+// })
+
 export class DataService {
 
   constructor(private url:string,private http:Http) { }
